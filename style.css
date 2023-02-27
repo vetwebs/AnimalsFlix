@@ -1,0 +1,171 @@
+:root{
+--fonte-principal: Coolvetica;
+--corpreta: #0000;
+--corvermelha: #d11717;
+--corbranca: white;
+--corazul: #250abd;
+--degrade: linear-gradiente (blue, red);
+--corcinza: #6b4646;
+}
+@font-face {
+    font-family: Coolvetica;
+    src: url(coolvetica\rg.otf);
+}
+/*MENU PRINCIPAL NAVEGAÇÃO*/
+header{
+    background-color: black;
+}
+.cabecalho__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+        
+}
+.lista-nav{
+    margin-top: 15px;
+    
+}
+.lista-nav a{
+    font-family: var(--fonte-principal);
+    color: var(--corbranca);
+    text-decoration: none;
+    padding: 35px;
+    font-size: 25px;
+}
+.lista-nav a:hover{
+    text-decoration: underline red 2px;
+}
+.pesquisa input{
+    padding: 8px;
+    margin: 10px;
+    border-radius: 10px;
+}
+/*FILMES EM DESTAQUE 1*/
+.conteudo-container-1{
+    background-color: var(--corvermelha);
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 25px;
+    color: var(--corbranca);
+    padding: 10px;
+}
+.filmes-destaque-container-1{
+    background-image: url(img/f-madagascar.png);
+    
+}
+
+.lista-filmes-destaque-1 img:hover{
+    width: 400px;
+    transition: 0.8s;
+}
+/*FILMES MAIS PROCURADOS*/
+.conteudo-container-2{
+    background-color: var(--corazul);
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 25px;
+    color: var(--corbranca);
+    padding: 10px;
+}
+.filmes-destaque-container-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: linear-gradient(rgba(179, 11, 11, 0.61), rgba(0, 0, 255, 0.466))
+
+}
+.filmes-destaque-container-2 img{
+    padding: 8px;
+    margin: 10px;
+    box-shadow: 5px 10px 30px #000000;
+    margin-bottom: 10px;
+}
+.filmes-destaque-container-2 img:hover{
+    width: 210px;
+    transition: 0.6s;
+}
+/*SERIES EM DESTAQUE*/
+.conteudo-container-3{
+    background-color: var(--corcinza);
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 25px;
+    color: black;
+    padding: 10px;
+}
+.filmes-destaque-container-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: linear-gradient(rgba(201, 184, 184, 0.61), rgba(0, 0, 255, 0.658))
+}
+.filmes-destaque-container-3 img{
+    padding: 8px;
+    margin: 10px;
+    box-shadow: 5px 10px 30px #000000;
+    margin-bottom: 10px;
+}
+.filmes-destaque-container-3 img:hover{
+    width: 210px;
+    transition: 0.6s;
+}
+/*FOOTER*/
+footer{background-color: #000000;}
+.rodape_container li{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: var(--fonte-principal);   
+}
+.rodape_container a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    
+}
+.rodape_container a:hover{
+    color: var(--corvermelha);
+}
+.ano-footer{
+    background-color: #6b4646;
+    color: rgb(17, 16, 16);
+    text-align: center;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size: 15px;
+}
+@media (max-width: 1000px) {
+    .cabecalho__container img{
+        justify-content: center;
+    }
+    .lista-nav{
+       display: flex;
+       justify-content: center;     
+    } 
+    .lista-nav a{
+        padding: 10px;
+    }
+    .pesquisa input{
+        display: none;
+    }
+    .filmes-destaque-container-2,.filmes-destaque-container-3{
+         text-align:  center;
+    }
+    .rodape_container li{
+        font-size: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
